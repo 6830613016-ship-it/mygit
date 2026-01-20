@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+    height: 85vh;
+    width: 80%;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    position: relative;
+    
+} 
+
+.item2,.item3,.item4,.item5 {
+    position: relative;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+#ikea-text {
+    color: rgb(255,221,3);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%,0) scale(1.5,1);
+    font-size: 10em;
+    font-family: 'League Spartan', sans-serif;
+    transform-origin: center;
+    letter-spacing: 5px;
+}
+
+#special {
+    color: rgb(255,221,3);
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    left: 50%;
+    margin-left: 220px;
+    
+}
+
+#way {
+    color: white;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 75%;
+    left: 29%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#arrow {
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 80%;
+    left: 30%;
+    margin-left: 0.5em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.right-bar {
+    position: absolute;
+    background-color: rgb(249,226,16);
+    width: 70px;
+    height: 50px;
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
+    top: 80%;
+    left: 30%;
+    margin-top: 2em;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(251,251,251);
+    text-shadow: 1px 1px 0 #000;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left-bar {
+    position: absolute;
+    background-color: rgba(249,226,16,0.7);
+    width: 210px;
+    height: 50px;
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
+    top: 80%;
+    left: 30%;
+    margin-top: 2em;
+    margin-left: 3.5em;
+    line-height: 50px;
+    padding-left: 0.6em;
+    color: rgb(251,251,251);
+    text-shadow: 1px 1px 0 #000;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.child-text {
+    position: absolute;
+    color: rgb(251,251,251);
+    text-shadow: 1px 2px 0 #000;
+    font-size: 0.9rem;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.5px;
+}

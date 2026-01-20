@@ -1,0 +1,54 @@
+.big-box {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.small-box1 {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.5em;
+    color: aliceblue;
+    left: 0;
+    top: 0;
+}
+
+.small-box2 {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.5em;
+    color: aliceblue;
+    right: 0;
+    top: 0;
+}
+
+.small-box3 {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.5em;
+    color: black;
+    left: 0;
+    bottom: 0;
+}
+
+.small-box4 {
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.5em;
+    color: aliceblue;
+    right: 0;
+    bottom: 0;
+}
